@@ -73,7 +73,7 @@ const ingestDocuments = async (req, res) => {
     for await (const pdf of set) {
       console.log(pdf);
       // await uploadDocument(req, pdf);
-      fs.unlinkSync('PDFs/' + pdf.title);
+      // fs.unlinkSync('PDFs/' + pdf.title);
     }
   }
 
